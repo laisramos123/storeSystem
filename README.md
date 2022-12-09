@@ -1,4 +1,3 @@
-# storiSystem
 # Sistema de gerenciamento de restaurante simples  :computer: :stew: :stew:
 ### O objetivo desse projeto é implementar os conhecimentos adquiridos ao longo do Bootcamp de desenvolvimento Node.js do IGTI
 #### Aqui irei aplicar conhecimentos sobre
