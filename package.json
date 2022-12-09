@@ -1,0 +1,25 @@
+{
+  "name": "storesystem",
+  "version": "1.0.0",
+  "description": ":heavy_check_mark:  Express <br> :heavy_check_mark:  React <br> :heavy_check_mark: Banco de dados <br> :heavy_check_mark: Graphql <br> :heavy_check_mark: Auth 2.0 <br> :heavy_check_mark: Contruções de API <br> :heavy_check_mark: Testes <br> :heavy_check_mark: Docker <br>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laisramos123/storeSystem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laisramos123/storeSystem/issues"
+  },
+  "homepage": "https://github.com/laisramos123/storeSystem#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "winston": "^3.8.2"
+  },
+  "type": "module"
+}
