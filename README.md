@@ -1,4 +1,4 @@
-# Sistema de gerenciamento de mercado simples  :computer: :strawberry: :tomato: :bread: :chocolate_bar:
+# Sistema de gerenciamento de mercado simples  :computer: :strawberry: :bread: :chocolate_bar::meat_on_bone: 🧺
 ### O objetivo desse projeto é implementar os conhecimentos adquiridos ao longo do Bootcamp de desenvolvimento Node.js do IGTI
 #### Aqui irei aplicar conhecimentos sobre
 :heavy_check_mark:  Express <br>
