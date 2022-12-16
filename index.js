@@ -26,12 +26,15 @@ global.logger = winston.createLogger({
 
 const app = express();
 app.use(express.json());
-app.use(cors);
+app.use(cors());
 app.use("/client", clientRouter);
 app.use("/product", productRouter);
 app.use("/sale", saleRouter);
 app.use("/supplier", supplierRouter);
-
+app.use((err, req, res,next)=>{
+    logger.error(`${req.method} ${req.baseUrl} - ${err.message}`);
+    res.status(400).send({error: err.message})
+})
 
 
 app.listen(3000,()=>console.log("API Started!"));
