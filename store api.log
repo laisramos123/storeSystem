@@ -1,1 +1,15 @@
 2022-12-11T19:37:06.150Z [store-api] error POST  - Nome, CPF, telefone, email e endereço são obrigatórios!
+2022-12-20T22:37:52.671Z [store-api] error POST  - Nome, CPF, telefone, email e endereço são obrigatórios!
+2022-12-20T22:40:16.280Z [store-api] error POST  - Nome, CPF, telefone, email e endereço são obrigatórios!
+2022-12-20T22:40:31.550Z [store-api] error POST  - Nome, CPF, telefone, email e endereço são obrigatórios!
+2022-12-20T22:41:47.743Z [store-api] error POST  - Nome, CPF, telefone, email e endereço são obrigatórios!
+2022-12-20T22:45:25.990Z [store-api] error POST  - Unexpected token / in JSON at position 47
+2022-12-20T22:46:01.571Z [store-api] error POST  - Nome, CPF, telefone, email e endereço são obrigatórios!
+2022-12-20T22:49:12.524Z [store-api] error POST  - syntax error at or near "VALUE"
+2022-12-20T22:49:56.220Z [store-api] error POST  - Nome, CPF, telefone, email e endereço são obrigatórios!
+2022-12-20T22:55:20.502Z [store-api] error POST  - Nome, CPF, telefone, email e endereço são obrigatórios!
+2022-12-20T22:58:07.582Z [store-api] error POST  - Nome, CPF, telefone, email e endereço são obrigatórios!
+2022-12-20T22:58:41.798Z [store-api] error POST  - syntax error at or near "VALUE"
+2022-12-20T22:59:34.603Z [store-api] error POST  - Name, CPF, phone, email e address são obrigatórios!
+2022-12-20T23:00:28.766Z [store-api] error POST  - syntax error at or near "VALUE"
+2022-12-20T23:07:03.835Z [store-api] error POST  - logge is not defined
