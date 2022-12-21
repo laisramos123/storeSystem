@@ -1,3 +1,4 @@
+
 import clientService from "../services/client.service.js"
 
 
@@ -9,12 +10,22 @@ async function createClient(req, res, next) {
         }  
         
         res.send(await clientService.createClient(client));
-        logge.info(`POST /client - ${JSON.stringify(client)}`)
+        logger.info(`POST /client - ${JSON.stringify(client)}`)
     } catch (err) {
         next(err);
     }
     
 }
+async function getClients(req,res,next){
+    try {
+        res.send(await clientService.getClients());
+        logger.info("GET /client");
+    } catch (err) {
+        next(err);
+    }
+}
+
 export default {
-    createClient
+    createClient,
+    getClients,
 }
