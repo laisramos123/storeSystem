@@ -9,6 +9,6 @@ async function getClients(){
 
 export default {
     createClient,
-    clientRepository,
+    getClients,
     
 }
