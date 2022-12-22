@@ -13,3 +13,24 @@
 2022-12-20T22:59:34.603Z [store-api] error POST  - Name, CPF, phone, email e address são obrigatórios!
 2022-12-20T23:00:28.766Z [store-api] error POST  - syntax error at or near "VALUE"
 2022-12-20T23:07:03.835Z [store-api] error POST  - logge is not defined
+2022-12-22T13:05:48.469Z [store-api] info GET /client
+2022-12-22T13:17:22.250Z [store-api] error GET  - syntax error at or near "client_id"
+2022-12-22T13:18:08.984Z [store-api] info GET /client
+2022-12-22T13:26:59.388Z [store-api] info POST /client - {"name":"Bruna","cpf":"994994411","phone":"39481353","email":"bruna@gmail.com","adress":"Qna 10 casa 39 Taguatinga-DF"}
+2022-12-22T13:27:56.188Z [store-api] info POST /client - {"name":"Josefa","cpf":"9949302911","phone":"3949323","email":"josefa@gmail.com","adress":"Qnq 13 casa 39 Ceilândia-DF"}
+2022-12-22T13:30:36.606Z [store-api] error DELETE  - argument of WHERE must be type boolean, not type integer
+2022-12-22T13:33:05.761Z [store-api] info DELETE /client
+2022-12-22T21:42:13.196Z [store-api] info POST /client - {"name":"Jose","cpf":"9323402911","phone":"39494343","email":"jose@gmail.com","adress":"Qng 13 casa 39 Taguatinga-DF"}
+2022-12-22T21:43:14.640Z [store-api] error PUT  - Client ID, Name, CPF, phone, email e adress são obrigatórios!
+2022-12-22T21:43:53.614Z [store-api] error PUT  - syntax error at or near "="
+2022-12-22T21:53:43.313Z [store-api] error PUT  - syntax error at or near "="
+2022-12-22T21:58:25.337Z [store-api] error PUT  - syntax error at or near "="
+2022-12-22T22:16:28.624Z [store-api] error PUT  - syntax error at or near "="
+2022-12-22T22:16:48.242Z [store-api] info GET /client
+2022-12-22T22:17:07.548Z [store-api] error PUT  - syntax error at or near "="
+2022-12-22T22:19:29.521Z [store-api] error PUT  - syntax error at or near "="
+2022-12-22T22:19:37.329Z [store-api] error PUT  - syntax error at or near "="
+2022-12-22T22:21:33.315Z [store-api] info PUT /client - {"client_id":1,"name":"João2","cpf":"9944002211","phone":"2341231","email":"joao@gmail.com","adress":"Qnl 04 conjunt B Taguatinga-DF"}
+2022-12-22T23:31:28.838Z [store-api] error POST  - supplierService.createSupplier is not a function
+2022-12-22T23:32:03.884Z [store-api] info POST /supplier - {"name":"Dona de casa","cnpj":"932.3487.911","phone":"39494366","email":"donadecasa@gmail.com","adress":"Qne 21 lotes 01 e 02 Taguatinga-DF"}
+2022-12-22T23:33:10.948Z [store-api] info POST /supplier - {"name":"Servelar","cnpj":"333.3487.911","phone":"33334366","email":"servelar@gmail.com","adress":"Qne 19 lotes 01  Taguatinga-DF"}

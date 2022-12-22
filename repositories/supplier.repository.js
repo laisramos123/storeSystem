@@ -1,9 +1,10 @@
 import {connect} from "./db.js"
+
 async function insertSupplier(supplier){
     const conn = await connect();
     try {
-        const sql = "INSERT INTO suppliers () VALUES ($1, $2, $3, $4, $5)"
-        const values = [];
+        const sql = "INSERT INTO suppliers (name, cnpj, phone, email, adress) VALUES ($1, $2, $3, $4, $5) RETURNING *"
+        const values = [supplier.name, supplier.cnpj, supplier.phone, supplier.email, supplier.adress];
         const res = await conn.query(sql,values);
         return res.rows[0];
     } catch (err) {
@@ -12,7 +13,7 @@ async function insertSupplier(supplier){
         conn.release(); //encerra a conexão
     }
     
-     return {};
+     return res.rows[0];
 }
 async function getSuppliers(){
     const conn = await connect();
@@ -26,10 +27,11 @@ async function getSuppliers(){
     }
 }
 
-async function getSupplier(){
+async function getSupplier(id){
     const conn = await connect();
     try {
-        
+    const res = await conn.query("SELECT * FROM suppliers WHERE supplier_id = $1", [id]);
+    return res.rows[0];
     } catch (err) {
         throw err;
     }finally{
@@ -37,10 +39,10 @@ async function getSupplier(){
     }
 }
 
-async function updateSuplier(){
+async function deleteSupplier(id){
     const conn = await connect();
     try {
-        
+     await conn.query("DELETE FROM suppliers WHERE supplier_id = $1", [id]);
     } catch (err) {
         throw err;
     }finally{
@@ -48,21 +50,26 @@ async function updateSuplier(){
     }
 }
 
-async function deleteSupplier(){
+async function updateSupplier(supplier){
     const conn = await connect();
     try {
-        
+    const sql = "UPDATE suppliers SET name = $1, cnpj = $2, phone = $3 , email = $4, adress = $5 WHERE supplier_id = $6 RETURNING *";
+    const values = [supplier.name, supplier.cnpj, supplier.phone, supplier.email,supplier.adress, supplier.supplier_id];
+    const res = await conn.query(sql,values);
+    return res.rows[0];
     } catch (err) {
         throw err;
     }finally{
         conn.release();
     }
 }
+
+
 
 export default{
     insertSupplier,
     getSuppliers,
     getSupplier,
-    updateSuplier,
+    updateSupplier,
     deleteSupplier
 }
