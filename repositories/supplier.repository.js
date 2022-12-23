@@ -13,7 +13,7 @@ async function insertSupplier(supplier){
         conn.release(); //encerra a conexão
     }
     
-     return res.rows[0];
+     
 }
 async function getSuppliers(){
     const conn = await connect();

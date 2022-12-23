@@ -13,7 +13,7 @@ async function insertClient(client){
         conn.release(); //encerra a conexão
     }
     
-     return {};
+     
 }
 async function getClients(){
     const conn = await connect();

@@ -34,3 +34,7 @@
 2022-12-22T23:31:28.838Z [store-api] error POST  - supplierService.createSupplier is not a function
 2022-12-22T23:32:03.884Z [store-api] info POST /supplier - {"name":"Dona de casa","cnpj":"932.3487.911","phone":"39494366","email":"donadecasa@gmail.com","adress":"Qne 21 lotes 01 e 02 Taguatinga-DF"}
 2022-12-22T23:33:10.948Z [store-api] info POST /supplier - {"name":"Servelar","cnpj":"333.3487.911","phone":"33334366","email":"servelar@gmail.com","adress":"Qne 19 lotes 01  Taguatinga-DF"}
+2022-12-23T00:22:26.520Z [store-api] error POST  - column "description" of relation "products" does not exist
+2022-12-23T00:22:34.259Z [store-api] error POST  - column "description" of relation "products" does not exist
+2022-12-23T00:25:45.632Z [store-api] error POST  - invalid input syntax for type numeric: "1,50"
+2022-12-23T00:25:55.506Z [store-api] info POST /product - {"name":"Limão","value":"1.50","stock":"300","supplier_id":"1"}
